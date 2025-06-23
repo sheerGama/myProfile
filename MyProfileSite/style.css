@@ -161,8 +161,10 @@ nav ul li a:hover {
 }
 
 .dynamic-title {
-    position: relative;
-    margin-top: 10px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
 }
 
@@ -189,39 +191,4 @@ nav ul li a:hover {
     0% { box-shadow: 0 0 15px #6c63ff; }
     50% { box-shadow: 0 0 35px #6c63ff; }
     100% { box-shadow: 0 0 15px #6c63ff; }
-}
-
-
-@media (max-width: 768px) {
-    .main {
-        flex-direction: column;
-        padding: 50px 20px;
-        gap: 50px;
-    }
-
-    .content {
-        text-align: center;
-    }
-
-    .content h1 {
-        font-size: 40px;
-    }
-
-    .content h3 {
-        font-size: 24px;
-    }
-
-    .content p {
-        font-size: 16px;
-    }
-
-    .profile-pic img {
-        width: 250px;
-    }
-
-    .social img {
-        width: 40px;
-        margin: 10px;
-    }
-
 }
